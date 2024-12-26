@@ -51,9 +51,9 @@ const LandingPage = () => {
             delay: 2000,
           }),
         ]}
-        className="w-full py-10"
+        className="w-full py-10 z-1"
       >
-        <CarouselContent className="flex gap-5 sm:gap-20 items-center">
+        <CarouselContent className="flex gap-5 sm:gap-20 items-center ">
           {companies.map(({ name, id, path }) => (
             <CarouselItem key={id} className="basis-1/3 lg:basis-1/6 ">
               <img
@@ -97,7 +97,7 @@ const LandingPage = () => {
         ))}
       </Accordion>
     </main>
-  )
+  );
 }
 
 export default LandingPage;

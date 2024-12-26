@@ -1,6 +1,5 @@
 import { getCompanies } from "@/Api/apiCompanies";
 import { getJobs } from "@/Api/apiJobs";
-import JobCard from "@/components/JobCard";
 import useFetch from "@/hooks/use-fetch";
 import {  useUser } from "@clerk/clerk-react";
 import { Input } from "@/components/ui/input";
@@ -10,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Select } from "@radix-ui/react-select";
 import { SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { State } from "country-state-city";
+import JobCard from "@/components/JobCard";
 
 const JobListing = () => {
   const [searchQuery, setSearchQuery] = useState("");
